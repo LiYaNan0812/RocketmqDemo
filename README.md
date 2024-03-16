@@ -3,10 +3,12 @@
 [下载源码包](https://dist.apache.org/repos/dist/release/rocketmq/5.2.0/rocketmq-all-5.2.0-source-release.zip "下载地址")
 
 解压并编译
->unzip rocketmq-all-5.2.0-source-release.zip
-> cd rocketmq-all-5.2.0-source-release
-> mvn -Prelease-all -DskipTests -Dspotbugs.skip=true clean install -U
+```shell
+> unzip rocketmq-all-5.2.0-source-release.zip  
+> cd rocketmq-all-5.2.0-source-release  
+> mvn -Prelease-all -DskipTests -Dspotbugs.skip=true clean install -U  
 > cd distribution/target/rokctmq-5.2.0/rocketmq-5.2.0
+```
 
 ### 2.启动NameServer
 *注意：因启动脚本runserver.sh中默认jvm的最小堆空间为4g，可以修改成512m避免空间不足报错。[参考教程](https://juejin.cn/post/7190568712235057211)*
